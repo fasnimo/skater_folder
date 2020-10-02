@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SkateSelector from './SkateSelector';
 import SkateShow from "./SkateShow"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 class SkateContainer extends Component {
 

@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux"
 import { addReview } from "../actions/reviewAction"
+ 
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Button, Form, Card } from "react-bootstrap"
+
 
 class ReviewForm extends Component {
     state={
@@ -29,33 +33,37 @@ class ReviewForm extends Component {
     }
 
     render() {
-        let men = this.props.mentions.map(ment => <li key={ment.id}> Subject: {ment.subject} - Review: {ment.mention}</li>)
+        // let men = this.props.mentions.map(ment => <li key={ment.id}> Subject: {ment.subject} - Review: {ment.mention}</li>)
+
+        let men = this.props.mentions.map(ment =><Card className="mb-3" style={{color: "#000"}} key={ment.id}><Card.Body> <Card.Title>Subject: {ment.subject}</Card.Title> <Card.Text>Review: {ment.mention}</Card.Text></Card.Body></Card>)
         return (
-            <>  
-                <h2>Review Submission:</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <h3>Enter Review:</h3>
-                    <input
+            <div>  
+                {/* <h2>Review Submission:</h2> */}
+                <Form onSubmit={this.handleSubmit}>
+                <Form.Group >
+                    <Form.Label>Enter Review:</Form.Label>
+                    <Form.Control
                         type="text"
                         onChange={this.handleChange}
                         value={this.state.subject}
                         name="subject"
                         placeholder="Enter Subject"
                     /><br/>
-                    <input 
+                    <Form.Control 
                         type="text"
                         value={this.state.mention}
                         onChange={this.handleChange}
                         name="mention"
                         placeholder="Enter Review"
                     /><br/>
-                    <input type="submit" value="Create Review"/>
-                </form>
+                    <Button type="submit" value="Create Review">Creat Review</Button>
+                </Form.Group>
+                </Form>
 
                 <ul>
                     {men}
                 </ul>
-            </>
+            </div>
         );
     }
 }

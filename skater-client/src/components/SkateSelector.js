@@ -1,6 +1,8 @@
 import React from 'react';
 import { fetchSkates } from "../actions/skateAction"
 import { connect } from "react-redux"
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Form} from "react-bootstrap"
 
 class SkateSelector extends React.Component{
     state={
@@ -19,16 +21,16 @@ class SkateSelector extends React.Component{
 
     render(){
         return ( 
-            <>  
-                <label>Select Style: </label><br/>
-                <select name="skate-selector" id="skate-selector" onChange={this.handleChange}>
+            <Form>  
+                <Form.Label>Select Style: </Form.Label><br/>
+                <Form.Control as="select" name="skate-selector" id="skate-selector" onChange={this.handleChange}>
                     <option value="placeholder"> Select </option>
                     <option value="urban"> Urban </option>
                     <option value="recreational"> Recreational</option>
                     <option value="speed"> Speed </option>
                     <option value="aggressive"> Aggressive </option>
-                </select>
-            </>    
+                </Form.Control>
+            </Form>    
         );
     }  
 };
