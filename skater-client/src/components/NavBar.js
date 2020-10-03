@@ -8,8 +8,10 @@ const NavBar = () => {
         <div className="navbar">
             <Breadcrumb>
                 <Breadcrumb.Item><NavLink to="/" exact>Home</NavLink></Breadcrumb.Item>
+                <Breadcrumb.Item><NavLink to="/about" exact>About</NavLink></Breadcrumb.Item>
                 <Breadcrumb.Item><NavLink to="/reviews/new" exact>Create Review</NavLink></Breadcrumb.Item>
                 <Breadcrumb.Item><NavLink to="/reviews" exact>Review List</NavLink></Breadcrumb.Item>
+                <Breadcrumb.Item><NavLink to="/faq" exact>FAQ</NavLink></Breadcrumb.Item>
             </Breadcrumb>
         </div>
     );
