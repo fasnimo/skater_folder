@@ -2,15 +2,16 @@ import React from 'react';
 import { connect } from "react-redux"
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Card } from "react-bootstrap"
+import Card from "react-bootstrap/Card"
+import Container from "react-bootstrap/Container"
 
 const Ska = ({id, name, level, url}) => {
     return(
         <Card key={id} className={level}>
-            <header>
-                <Card.Text><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></Card.Text>
+            <Card.Body>
+               <Card.Text><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></Card.Text>
                 <Card.Text>Skill: {level.charAt(0).toUpperCase() + level.slice(1)}</Card.Text>
-             </header>
+             </Card.Body>
         </Card>
     )
 }
@@ -18,7 +19,9 @@ const Ska = ({id, name, level, url}) => {
 const SkateShow = ({skates}) => {
     return(
         <div className="skate-list">
-            {skates.map(Ska)}
+            <Container>
+                {skates.map(Ska)}
+            </Container>
         </div>
     )
 }

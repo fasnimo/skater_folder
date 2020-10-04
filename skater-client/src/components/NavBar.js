@@ -1,17 +1,44 @@
 import React from 'react';
-import { NavLink } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Container } from "react-bootstrap"
+import Container from "react-bootstrap/Container"
+
+import styled from "styled-components"
+import Nav from "react-bootstrap/Nav"
+import Navbar from "react-bootstrap/Navbar"
+
+const Styles = styled.div`
+    .navbar {
+        background-color: #1000;
+    }
+
+    .navbar-brand, .navbar-nav, .nav-link {
+        color: #000;
+        &:hover {
+            color: grey
+        }
+    }
+
+`;
 
 const NavBar = () => {
     return (
         <div className="navbar">
             <Container>
-                    <NavLink to="/" exact>Home</NavLink>
-                    <NavLink to="/about" exact>About</NavLink>
-                    <NavLink to="/reviews/new" exact>Submit Review</NavLink>
-                    <NavLink to="/reviews" exact>Reviews</NavLink>
-                    <NavLink to="/faq" exact>FAQ</NavLink>   
+                    <Styles>
+                    <Navbar expand="lg">
+                        <Navbar.Brand>SkateFinder</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav>
+                                    <Nav.Link href="/" exact>Home</Nav.Link>
+                                    <Nav.Link href="/about" exact>About</Nav.Link>
+                                    <Nav.Link href="/reviews/new" exact>Submit Review</Nav.Link>
+                                    <Nav.Link href="/reviews" exact>Reviews</Nav.Link>
+                                    <Nav.Link href="/faq" exact>FAQ</Nav.Link>  
+                                </Nav>
+                            </Navbar.Collapse>
+                    </Navbar>
+                    </Styles> 
             </Container>
         </div>
     );

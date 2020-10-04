@@ -2,7 +2,7 @@ import React from 'react';
 import { fetchSkates } from "../actions/skateAction"
 import { connect } from "react-redux"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Form} from "react-bootstrap"
+import Form from "react-bootstrap/Form"
 
 class SkateSelector extends React.Component{
     state={

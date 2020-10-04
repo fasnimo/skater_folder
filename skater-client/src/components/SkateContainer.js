@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import SkateSelector from './SkateSelector';
 import SkateShow from "./SkateShow"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Container, Card } from "react-bootstrap"
+import Card from "react-bootstrap/Card"
+import Container from "react-bootstrap/Container"
 
 class SkateContainer extends Component {
 
@@ -15,7 +16,7 @@ class SkateContainer extends Component {
                         <Card.Img src="https://picsum.photos/id/157/3000/800"/>
                         <Card.Body>
                             <Card.Text align="center">
-                                <p>Please feel free to leave a review by clicking the review tab</p>
+                                <p>Please feel free to leave a review by clicking the review tab.</p>
                                 <p>Select your Skate Style to begin</p>
                             </Card.Text>
                         </Card.Body>

@@ -3,7 +3,8 @@ import { connect } from "react-redux"
 import { fetchReview } from "../actions/fetchReview"
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Card, Container } from "react-bootstrap"
+import Card from "react-bootstrap/Card"
+import Container from "react-bootstrap/Container"
 
 class ReviewList extends React.Component{
 
