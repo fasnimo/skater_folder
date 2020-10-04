@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 import { addReview } from "../actions/reviewAction"
  
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Button, Form, Card } from "react-bootstrap"
+import { Button, Form, Card, Container} from "react-bootstrap"
 
 
 class ReviewForm extends Component {
@@ -38,6 +38,7 @@ class ReviewForm extends Component {
         let men = this.props.mentions.map(ment =><Card className="mb-3" style={{color: "#000"}} key={ment.id}><Card.Body> <Card.Title>Subject: {ment.subject}</Card.Title> <Card.Text>Review: {ment.mention}</Card.Text></Card.Body></Card>)
         return (
             <div>  
+                <Container>
                 {/* <h2>Review Submission:</h2> */}
                 <Form onSubmit={this.handleSubmit}>
                 <Form.Group >
@@ -50,7 +51,9 @@ class ReviewForm extends Component {
                         placeholder="Enter Subject"
                     /><br/>
                     <Form.Control 
-                        type="text"
+                        as="textarea"
+                        rows="3"
+                        // type="text"
                         value={this.state.mention}
                         onChange={this.handleChange}
                         name="mention"
@@ -63,6 +66,7 @@ class ReviewForm extends Component {
                 <ul>
                     {men}
                 </ul>
+                </Container>
             </div>
         );
     }

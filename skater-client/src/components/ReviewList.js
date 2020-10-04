@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 import { fetchReview } from "../actions/fetchReview"
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Card } from "react-bootstrap"
+import { Card, Container } from "react-bootstrap"
 
 class ReviewList extends React.Component{
 
@@ -16,10 +16,13 @@ class ReviewList extends React.Component{
         let men = this.props.mentions.map(mention => <Card className="mb-3" style={{color: "#000"}} key={mention.id}><Card.Body key={mention.id}> <Card.Title>Subject: {mention.subject}</Card.Title> <Card.Text>Review: {mention.mention}</Card.Text></Card.Body></Card>)
         return(
             <div className="review-list">
-            <h3>Review List:</h3>
-            <ul>
-                {men}
-            </ul>
+            <Card.Img src="https://picsum.photos/id/4/5000/700"/>
+            <Container>
+                <h3 align="center">Review List</h3>
+                <ul>
+                    {men}
+                </ul>
+            </Container>
         </div>
         )
     }

@@ -1,18 +1,20 @@
 import React from 'react';
 import { NavLink } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Breadcrumb } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 const NavBar = () => {
     return (
         <div className="navbar">
-            <Breadcrumb>
-                <Breadcrumb.Item><NavLink to="/" exact>Home</NavLink></Breadcrumb.Item>
-                <Breadcrumb.Item><NavLink to="/about" exact>About</NavLink></Breadcrumb.Item>
-                <Breadcrumb.Item><NavLink to="/reviews/new" exact>Create Review</NavLink></Breadcrumb.Item>
-                <Breadcrumb.Item><NavLink to="/reviews" exact>Review List</NavLink></Breadcrumb.Item>
-                <Breadcrumb.Item><NavLink to="/faq" exact>FAQ</NavLink></Breadcrumb.Item>
-            </Breadcrumb>
+            <Container>
+              
+                    <NavLink to="/" exact>Home</NavLink>
+                    <NavLink to="/about" exact>About</NavLink>
+                    <NavLink to="/reviews/new" exact>Submit Review</NavLink>
+                    <NavLink to="/reviews" exact>Review List</NavLink>
+                    <NavLink to="/faq" exact>FAQ</NavLink>
+                
+            </Container>
         </div>
     );
 };
