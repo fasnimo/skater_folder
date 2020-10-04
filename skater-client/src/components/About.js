@@ -7,7 +7,7 @@ const About = () => {
         <div className="About">
             <Container>
                 <Card>
-                <Card.Img src="https://picsum.photos/id/17/3000/700"/>
+                <Card.Img src="https://picsum.photos/id/17/4000/900"/>
                     <Card.Body>
                         <Card.Title align="center"><h1>About</h1></Card.Title>
                         <Card.Text>

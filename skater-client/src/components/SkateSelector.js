@@ -23,7 +23,7 @@ class SkateSelector extends React.Component{
         return ( 
             <Form>  
                 <Form.Label>Skating Styles:</Form.Label><br/>
-                <Form.Control as="select" size="sm" name="skate-selector" id="skate-selector" onChange={this.handleChange}>
+                <Form.Control as="select" size="" name="skate-selector" id="skate-selector" onChange={this.handleChange}>
                     <option value="placeholder"> Select </option>
                     <option value="urban"> Urban </option>
                     <option value="recreational"> Recreational</option>
