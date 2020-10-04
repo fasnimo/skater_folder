@@ -12,7 +12,7 @@ const About = () => {
                         <Card.Title align="center"><h1>About</h1></Card.Title>
                         <Card.Text>
                             <blockquote>
-                                Welcome to Skate Finder, here we assist you in finding your best inline stake. We know that getting into skating isn't easy because there are soo many options, even for an intermediate skater. This site caters to those who might have not bought a pair of skates in a while and need help choosing. There have been new styles that have moved into the inline skating community such as "freestyle" and "urban". Look into our FAQ page where we offer some insight on the differences. Feel free to leave a review under the review tab.                        
+                                Welcome to Skate Finder, here we assist you in finding your best inline stake. We know that getting into skating isn't easy because inline skating is a multi-disciplinary sport, even for an intermediate skater. This site caters to those who might have not bought a pair of skates in a while and need help choosing. There have been new styles that have moved into the inline skating community such as "freestyle" and "urban". Look into our FAQ page where we offer some insight on the differences. Feel free to leave a review under the review tab.                        
                             </blockquote>
                         </Card.Text>
                     </Card.Body>

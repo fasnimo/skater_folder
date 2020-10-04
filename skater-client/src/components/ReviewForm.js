@@ -56,7 +56,7 @@ class ReviewForm extends Component {
                         name="mention"
                         placeholder="Enter Review"
                     /><br/>
-                    <Button type="submit" value="Create Review">Creat Review</Button>
+                    <Button type="submit" value="Create Review">Submit Review</Button>
                 </Form.Group>
                 </Form>
 
