@@ -34,15 +34,13 @@ class ReviewForm extends Component {
 
     render() {
         // let men = this.props.mentions.map(ment => <li key={ment.id}> Subject: {ment.subject} - Review: {ment.mention}</li>)
-
         let men = this.props.mentions.map(ment =><Card className="mb-3" style={{color: "#000"}} key={ment.id}><Card.Body> <Card.Title>Subject: {ment.subject}</Card.Title> <Card.Text>Review: {ment.mention}</Card.Text></Card.Body></Card>)
         return (
             <div>  
                 <Container>
-                {/* <h2>Review Submission:</h2> */}
                 <Form onSubmit={this.handleSubmit}>
                 <Form.Group >
-                    <Form.Label>Enter Review:</Form.Label>
+                    <Form.Label><h4>Enter Review:</h4></Form.Label>
                     <Form.Control
                         type="text"
                         onChange={this.handleChange}
@@ -53,7 +51,6 @@ class ReviewForm extends Component {
                     <Form.Control 
                         as="textarea"
                         rows="3"
-                        // type="text"
                         value={this.state.mention}
                         onChange={this.handleChange}
                         name="mention"

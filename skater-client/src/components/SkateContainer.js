@@ -11,10 +11,10 @@ class SkateContainer extends Component {
             <div className="skates-container">
                 <Container>
                     <Card>
-                        <Card.Img src="https://picsum.photos/id/99/4000/800"/>
+                        <h3 align="center">Welcome to SkateFinder</h3>
+                        <Card.Img src="https://picsum.photos/id/157/3000/800"/>
                         <Card.Body>
                             <Card.Text align="center">
-                                <h3>Welcome to SkateFinder</h3>
                                 <p>Please feel free to leave a review by clicking the review tab</p>
                                 <p>Select your Skate Style to begin</p>
                             </Card.Text>

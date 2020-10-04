@@ -16,8 +16,6 @@ const Ska = ({id, name, level, url}) => {
 }
 
 const SkateShow = ({skates}) => {
-// make card **
-// add imgs
     return(
         <div className="skate-list">
             {skates.map(Ska)}
