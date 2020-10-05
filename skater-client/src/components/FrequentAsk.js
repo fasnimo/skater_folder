@@ -18,7 +18,7 @@ const FrequentAsk = () => {
                             <blockquote align="center">
                                 Here are some of the most frequent asked questions when it comes to chosine the best inline skate.
                             </blockquote>
-                            <Button onClick={onClick} align="center">Show FAQ</Button>
+                            <Button onClick={onClick} align="center" className="mb-3">Show FAQ</Button>
                             { showResaults ? <Resaults/> : null}
                         </Card.Text>
                     </Card.Body>

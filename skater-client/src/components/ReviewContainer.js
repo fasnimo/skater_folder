@@ -2,7 +2,7 @@ import React from 'react';
 import ReviewForm from "./ReviewForm"
 import ReviewList from "./ReviewList"
 import { connect } from "react-redux"
-import fetchReviews from "../actions/fetchReviews"
+import fetchReviews from "../actions/reviewAction"
 
 class ReviewContainer extends React.Component{
     

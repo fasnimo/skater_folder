@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux"
-import { fetchReview } from "../actions/fetchReview"
+import { fetchReview } from "../actions/reviewAction"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import Card from "react-bootstrap/Card"
