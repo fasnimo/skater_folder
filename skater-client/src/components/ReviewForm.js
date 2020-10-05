@@ -8,7 +8,7 @@ import { Button, Form, Container} from "react-bootstrap"
 class ReviewForm extends Component {
     state={
         subject: "",
-        mention: ""
+        review: ""
     }
 
     handleChange = (e) => {
@@ -27,13 +27,13 @@ class ReviewForm extends Component {
     resetForm = () => {
         this.setState({
             subject: "",
-            mention: ""
+            review: ""
         })
     }
 
     render() {
-        // let men = this.props.mentions.map(ment => <li key={ment.id}> Subject: {ment.subject} - Review: {ment.mention}</li>)
-        // let men = this.props.mentions.map(ment =><Card className="mb-3" style={{color: "#000"}} key={ment.id}><Card.Body> <Card.Title>Subject: {ment.subject}</Card.Title> <Card.Text>Review: {ment.mention}</Card.Text></Card.Body></Card>)
+        // let men = this.props.reviews.map(ment => <li key={ment.id}> Subject: {ment.subject} - Review: {ment.review}</li>)
+        // let men = this.props.reviews.map(ment =><Card className="mb-3" style={{color: "#000"}} key={ment.id}><Card.Body> <Card.Title>Subject: {ment.subject}</Card.Title> <Card.Text>Review: {ment.review}</Card.Text></Card.Body></Card>)
         return (
             <div>  
                 <Container>
@@ -50,9 +50,9 @@ class ReviewForm extends Component {
                     <Form.Control 
                         as="textarea"
                         rows="3"
-                        value={this.state.mention}
+                        value={this.state.review}
                         onChange={this.handleChange}
-                        name="mention"
+                        name="review"
                         placeholder="Enter Review"
                     /><br/>
                     <Button type="submit" value="Create Review">Submit Review</Button>

@@ -6,7 +6,7 @@ export const fetchReview = () => {
     } 
 }
 
-export const addReview = (mention) => {
+export const addReview = (data) => {
     return (dispatch) => {
         fetch("http://localhost:3000/reviews",{
             method: "POST",
@@ -14,7 +14,7 @@ export const addReview = (mention) => {
                 "Content-Type": "application/json",
                 "Accept": "application/json"
             },
-            body: JSON.stringify({subject: mention.subject, mention: mention.mention})
+            body: JSON.stringify({subject: data.subject, mention: data.review})
         })
         .then(res => res.json())
         .then(review => dispatch({type: "ADD_REVIEW", payload: review}))
