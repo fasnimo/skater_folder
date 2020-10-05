@@ -4,5 +4,5 @@ import { reviewReducer }from "./reviewReducer"
 
 export const rootReducer = combineReducers({
     skates: skateReducer,
-    mentions: reviewReducer  
+    reviews: reviewReducer  
 })

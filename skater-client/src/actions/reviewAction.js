@@ -18,5 +18,6 @@ export const addReview = (mention) => {
         })
         .then(res => res.json())
         .then(review => dispatch({type: "ADD_REVIEW", payload: review}))
+        window.location.href = "http://localhost:3001/reviews"
     }
 }

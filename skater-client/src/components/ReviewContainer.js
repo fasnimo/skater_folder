@@ -2,22 +2,32 @@ import React from 'react';
 import ReviewForm from "./ReviewForm"
 import ReviewList from "./ReviewList"
 import { connect } from "react-redux"
-import fetchReviews from "../actions/reviewAction"
+import {fetchReview} from "../actions/reviewAction"
+import {Route, Switch} from "react-router-dom"
+
 
 class ReviewContainer extends React.Component{
     
     componentDidMount(){
-        this.props.fetchReviews()
+        this.props.fetchReview()
     }
     
     render(){
          return (
             <div>
-                <ReviewForm />
-                <ReviewList />
+                <Switch>
+                    <Route exact path="/reviews/new" component={ReviewForm} />
+                    <Route exact path="/reviews" render={() => <ReviewList reviews={this.props.reviews}/>} />  
+                </Switch>
             </div>
         );
     }
 };
 
-export default connect(null, {fetchReviews})(ReviewContainer);
+const mapStateToProps = ( state) => {
+    return {
+        reviews: state.reviews
+    }
+}
+
+export default connect(mapStateToProps, {fetchReview})(ReviewContainer);

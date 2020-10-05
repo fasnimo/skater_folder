@@ -1,20 +1,11 @@
 import React from 'react';
-import { connect } from "react-redux"
-import { fetchReview } from "../actions/reviewAction"
-
 import "bootstrap/dist/css/bootstrap.min.css"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 
-class ReviewList extends React.Component{
+const ReviewList = ({reviews}) => {
 
-    componentDidMount(){
-        this.props.fetchReview()
-    }
-    
-    render () {
-        // let men = this.props.mentions.map(mention => <li key={mention.id}> Subject: {mention.subject} - Review: {mention.mention}</li>)
-    let men = this.props.mentions.map(mention => (
+    let men = reviews.map(mention => (
             <Card className="mb-3, mr-5" style={{color: "#000"}} key={mention.id}>
                 <Card.Body key={mention.id}> 
                 <Card.Title>Subject: {mention.subject}</Card.Title> 
@@ -36,13 +27,6 @@ class ReviewList extends React.Component{
             </Container>
         </div>
         )
-    }
 }
 
-const mapStateToProps = (state) => {
-    return {
-        mentions: state.mentions
-    }
-}
-
-export default connect(mapStateToProps, { fetchReview })(ReviewList);
+export default ReviewList;

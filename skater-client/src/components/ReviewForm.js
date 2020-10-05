@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux"
 import { addReview } from "../actions/reviewAction"
-// import ReviewList from "./ReviewList"
-
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Button, Form, Card, Container} from "react-bootstrap"
+import { Button, Form, Container} from "react-bootstrap"
 
 
 class ReviewForm extends Component {
@@ -35,7 +33,7 @@ class ReviewForm extends Component {
 
     render() {
         // let men = this.props.mentions.map(ment => <li key={ment.id}> Subject: {ment.subject} - Review: {ment.mention}</li>)
-        let men = this.props.mentions.map(ment =><Card className="mb-3" style={{color: "#000"}} key={ment.id}><Card.Body> <Card.Title>Subject: {ment.subject}</Card.Title> <Card.Text>Review: {ment.mention}</Card.Text></Card.Body></Card>)
+        // let men = this.props.mentions.map(ment =><Card className="mb-3" style={{color: "#000"}} key={ment.id}><Card.Body> <Card.Title>Subject: {ment.subject}</Card.Title> <Card.Text>Review: {ment.mention}</Card.Text></Card.Body></Card>)
         return (
             <div>  
                 <Container>
@@ -60,21 +58,10 @@ class ReviewForm extends Component {
                     <Button type="submit" value="Create Review">Submit Review</Button>
                 </Form.Group>
                 </Form>
-
-                <ul>
-                    {men}
-                </ul>
-                    {/* <ReviewList /> */}
                 </Container>
             </div>
         );
     }
 }
 
-const mapStateToProps = (state) => {
-    return {
-        mentions: state.mentions
-    }
-}
-
-export default connect(mapStateToProps, {addReview})(ReviewForm);
+export default connect(null, {addReview})(ReviewForm);
