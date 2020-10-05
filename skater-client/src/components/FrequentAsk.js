@@ -14,13 +14,11 @@ const FrequentAsk = () => {
                     <Card.Img src="https://picsum.photos/id/9/3000/700"/>
                         <Card.Body>
                         <Card.Title align="center"><h1>FAQ</h1></Card.Title>
-                        <Card.Text>
                             <blockquote align="center">
                                 Here are some of the most frequent asked questions when it comes to chosine the best inline skate.
                             </blockquote>
                             <Button onClick={onClick} align="center" className="mb-3">Show FAQ</Button>
                             { showResaults ? <Resaults/> : null}
-                        </Card.Text>
                     </Card.Body>
                 </Card>
             </Container>

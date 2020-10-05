@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux"
 import { addReview } from "../actions/reviewAction"
- 
+// import ReviewList from "./ReviewList"
+
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Button, Form, Card, Container} from "react-bootstrap"
 
@@ -63,6 +64,7 @@ class ReviewForm extends Component {
                 <ul>
                     {men}
                 </ul>
+                    {/* <ReviewList /> */}
                 </Container>
             </div>
         );

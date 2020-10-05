@@ -15,10 +15,10 @@ class SkateContainer extends Component {
                         <h3 align="center">Welcome to SkateFinder</h3>
                         <Card.Img src="https://picsum.photos/id/157/3000/800"/>
                         <Card.Body>
-                            <Card.Text align="center">
+                            <div id="intro" align="center">
                                 <p>Please feel free to leave a review by clicking the review tab.</p>
                                 <p>Select your Skate Style to begin</p>
-                            </Card.Text>
+                            </div>
                         </Card.Body>
                     </Card>
                     <SkateSelector/>

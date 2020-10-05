@@ -39,26 +39,6 @@ class ReviewList extends React.Component{
     }
 }
 
-// export default ReviewList
-// const Rev = ({  id, mention }) => {
-//     return (
-//         <div className="reviews" key={id}>
-//             <blockquote>
-//                 {mention}
-//             </blockquote>
-//         </div>
-//     )
-// }
-
-// const ReviewList = ({mentions}) => {
-//     return (
-//         <div className="review-list">
-//             <h4>Review List:</h4>
-//             {mentions.map(Rev)}
-//         </div>
-//     );
-// };
-
 const mapStateToProps = (state) => {
     return {
         mentions: state.mentions

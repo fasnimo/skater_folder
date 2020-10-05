@@ -30,11 +30,11 @@ const NavBar = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav>
-                                    <Nav.Link href="/" exact>Home</Nav.Link>
-                                    <Nav.Link href="/about" exact>About</Nav.Link>
-                                    <Nav.Link href="/reviews/new" exact>Submit Review</Nav.Link>
-                                    <Nav.Link href="/reviews" exact>Reviews</Nav.Link>
-                                    <Nav.Link href="/faq" exact>FAQ</Nav.Link>  
+                                    <Nav.Link href="/" >Home</Nav.Link>
+                                    <Nav.Link href="/about" >About</Nav.Link>
+                                    <Nav.Link href="/reviews/new" >Submit Review</Nav.Link>
+                                    <Nav.Link href="/reviews" >Reviews</Nav.Link>
+                                    <Nav.Link href="/faq" >FAQ</Nav.Link>  
                                 </Nav>
                             </Navbar.Collapse>
                     </Navbar>
