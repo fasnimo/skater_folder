@@ -32,8 +32,7 @@ class ReviewForm extends Component {
     }
 
     render() {
-        // let men = this.props.reviews.map(ment => <li key={ment.id}> Subject: {ment.subject} - Review: {ment.review}</li>)
-        // let men = this.props.reviews.map(ment =><Card className="mb-3" style={{color: "#000"}} key={ment.id}><Card.Body> <Card.Title>Subject: {ment.subject}</Card.Title> <Card.Text>Review: {ment.review}</Card.Text></Card.Body></Card>)
+       
         return (
             <div>  
                 <Container>

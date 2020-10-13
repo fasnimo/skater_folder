@@ -1,7 +1,6 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css"
 import Container from "react-bootstrap/Container"
-// import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
@@ -34,7 +33,7 @@ const NavBar = () => {
                                     <Nav.Link href="/about" >About</Nav.Link>
                                     <Nav.Link href="/reviews/new" >Submit Review</Nav.Link>
                                     <Nav.Link href="/reviews" >Reviews</Nav.Link>
-                                    <Nav.Link href="/faq" >FAQ</Nav.Link>  
+                                    <Nav.Link href="/faq" >FAQ</Nav.Link>                                      
                                 </Nav>
                             </Navbar.Collapse>
                     </Navbar>
