@@ -8,23 +8,19 @@
 
 Skate.destroy_all
 
-# skates = Skate.create([
-#     {level: "urban", name: "powerslide"},
-#     {level: "recreational", name: "rollerblade"}
-#     ])
-Skate.create(level: "urban", name: "PowerSlide Next", url: "https://www.inlinewarehouse.com/Powerslide_Next_Core_110/descpage-908366.html")
+Skate.create(level: "urban", name: "PowerSlide Next Pro", url: "https://www.inlinewarehouse.com/Powerslide_Next_Pro_110/descpage-908333.html")
 Skate.create(level: "recreational", name: "Rollerblade XL", url: "https://www.inlinewarehouse.com/Rollerblade_XL/descpage-XL1A.html")
-Skate.create(level: "urban", name: "PowerSlide Zoom", url: "https://www.inlinewarehouse.com/Powerslide_Zoom_Pro_100/descpage-908336.html")
-Skate.create(level: "recreational", name: "K2 Alexis", url: "https://www.inlinewarehouse.com/K2_Alexis_84_BOA/descpage-201601.html")
-Skate.create(level: "urban", name: "PowerSlide Hardcore Evo", url: "https://www.inlinewarehouse.com/Powerslide_Hardcore_Evo_Pro/descpage-908277.html")
-Skate.create(level: "recreational", name: "PowerSlide Phuzion Radon", url: "https://www.inlinewarehouse.com/Powerslide_Phuzion_Radon_90/descpage-902011.html")
-Skate.create(level: "urban", name: "Rollerblade Tister Edge", url: "https://www.inlinewarehouse.com/Rollerblade_Twister_Edge_110_3WD/descpage-TE310BS.html")
-Skate.create(level: "recreational", name: "K2 Fit", url: "https://www.inlinewarehouse.com/K2_FIT_80_Boa/descpage-200901.html")
-Skate.create(level: "urban", name: "FR FR1", url: "https://www.inlinewarehouse.com/FR_FR1_325/descpage-1325B18.html")
-Skate.create(level: "recreational", name: "Rollerblade Macroblade", url: "https://www.inlinewarehouse.com/Rollerblade_Microblade_Free_3WD/descpage-MBF3B.html")
-Skate.create(level: "urban", name: "K2 Sodo", url: "https://www.inlinewarehouse.com/K2_Sodo/descpage-02401.html")
-Skate.create(level: "aggressive", name: "Them 909 Danny", url: "https://www.inlinewarehouse.com/Them_909_Danny_Beer_Pro/descpage-T909D.html")
+Skate.create(level: "urban", name: "PowerSlide Zoom", url: "https://www.inlinewarehouse.com/Powerslide_One_Zoom_100/descpage-880255.html")
+Skate.create(level: "recreational", name: "K2 Alexis", url: "https://www.inlinewarehouse.com/K2_Alexis_90_BOA/descpage-210901.html")
+Skate.create(level: "urban", name: "PowerSlide Hardcore Evo", url: "https://www.inlinewarehouse.com/search-inline.html?sort=no&start=0&count=30&searchtext=powerslide+hardcore+evo")
+Skate.create(level: "recreational", name: "PowerSlide Phuzion Argon", url: "https://www.inlinewarehouse.com/Powerslide_Phuzion_Argon_100/descpage-940667.html")
+Skate.create(level: "urban", name: "Rollerblade Tister Edge", url: "https://www.inlinewarehouse.com/Rollerblade_Twister_Edge_110_3WD_Limited_Ed_4/descpage-TE410BS.html")
+Skate.create(level: "recreational", name: "K2 Fit", url: "https://www.inlinewarehouse.com/K2_FIT_90_BOA/descpage-201701.html")
+Skate.create(level: "urban", name: "FR FR1", url: "https://www.inlinewarehouse.com/FR_Skates_FR1_310/descpage-1310B18.html")
+Skate.create(level: "recreational", name: "Rollerblade Macroblade", url: "https://www.inlinewarehouse.com/Rollerblade_Macroblade_100_3WD/descpage-RMB100.html")
+Skate.create(level: "urban", name: "K2 Trio 110", url: "https://www.inlinewarehouse.com/K2_Trio_110/descpage-211201.html")
+Skate.create(level: "aggressive", name: "Them 909 Danny Beer Pro", url: "https://www.inlinewarehouse.com/Them_909_Danny_Beer_Pro/descpage-T909D.html")
 Skate.create(level: "speed", name: "PowerSlide XXX", url: "https://www.inlinewarehouse.com/Powerslide_XXX/descpage-904522.html")
-Skate.create(level: "aggressive", name: "GAWDS FM2", url: "https://www.inlinewarehouse.com/GAWDS_FM2_Taxi_Pro/descpage-430046.html")
+Skate.create(level: "aggressive", name: "USD Sway Team IV", url: "https://www.inlinewarehouse.com/USD_Sway_Team_IV/descpage-710173.html")
 Skate.create(level: "speed", name: "PowerSlide Icon Windy", url: "https://www.inlinewarehouse.com/Powerslide_Icon_Wind_Trinity_125/descpage-904481.html")
-Skate.create(level: "aggressive", name: "USD Aeon", url: "https://www.inlinewarehouse.com/USD_Aeon_80/descpage-710136.html")
+Skate.create(level: "aggressive", name: "USD Aeon", url: "https://www.inlinewarehouse.com/USD_Aeon_60_Basic_XXI/descpage-710171.html")
